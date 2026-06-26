@@ -1,0 +1,38 @@
+<!--
+  Merge these <activity-alias> entries into your AndroidManifest.xml, inside <application>,
+  AFTER your real launcher <activity android:name=".MainActivity">.
+
+  Rules:
+  - The real <activity> must NOT have the LAUNCHER intent-filter anymore; the aliases carry it.
+  - Exactly ONE alias is enabled at a time (IconManager handles this). Ship "default" enabled.
+  - Each alias points at its own mipmap icon (generated per theme).
+  Themed icons (Android 13+) come from android:roundIcon + the <monochrome> layer in
+  mipmap-anydpi-v26/ic_launcher.xml — that is system-driven and separate from these aliases.
+-->
+<activity-alias
+    android:name=".MainActivityDefault"
+    android:enabled="true"
+    android:exported="true"
+    android:icon="@mipmap/ic_launcher"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:targetActivity=".MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<activity-alias
+    android:name=".MainActivityPride"
+    android:enabled="false"
+    android:exported="true"
+    android:icon="@mipmap/ic_launcher_pride"
+    android:roundIcon="@mipmap/ic_launcher_pride_round"
+    android:targetActivity=".MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity-alias>
+
+<!-- repeat for halloween, holiday … (android:enabled="false") -->

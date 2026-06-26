@@ -1,0 +1,20 @@
+{
+  "company": "Butake",
+  "family": "Buky",
+  "font": "Plus Jakarta Sans",
+  "uiIconLibrary": "Phosphor",
+  "safeZone": 0.56,
+  "radiusPct": 0.2235,
+  "products": [
+    { "key": "buky",  "name": "Buky",       "bg": "#0F2922", "bgDark": "#081310", "fg": "#00E091", "flagship": true },
+    { "key": "salud", "name": "Buky Salud", "bg": "#E8475A", "bgDark": "#5A1F27", "fg": "#FFFFFF", "glyph": "heart" },
+    { "key": "gps",   "name": "Buky GPS",   "bg": "#2F7FD8", "bgDark": "#143A5E", "fg": "#FFFFFF", "glyph": "map-pin" }
+  ],
+  "themes": [
+    { "key": "default",   "label": "Default" },
+    { "key": "pride",     "label": "Pride",     "bg": "#0F2922", "rainbow": true },
+    { "key": "halloween", "label": "Halloween", "bg": "#15101F", "fg": "#FF7518" },
+    { "key": "holiday",   "label": "Navidad",   "bg": "#0F2922", "fg": "#00E091", "accent": "#F3D27A" }
+  ],
+  "_notes": "Add a product => one entry in products (its bg color is the whole distinctive). Add a theme => one entry in themes. fg is the symbol color; flagship app keeps forest bg + mint fg, products use a color bg + white fg."
+}

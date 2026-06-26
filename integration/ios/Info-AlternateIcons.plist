@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Merge this block into your app's Info.plist.
+  Each alternate icon PNG (e.g. pride@2x.png, pride@3x.png) must be in the app bundle
+  (loose files, NOT inside Assets.xcassets) and listed under CFBundleIconFiles.
+  The primary icon (CFBundlePrimaryIcon) stays in the asset catalog as usual.
+-->
+<plist version="1.0">
+<dict>
+  <key>CFBundleIcons</key>
+  <dict>
+    <key>CFBundleAlternateIcons</key>
+    <dict>
+      <key>pride</key>
+      <dict>
+        <key>CFBundleIconFiles</key><array><string>pride</string></array>
+        <key>UIPrerenderedIcon</key><false/>
+      </dict>
+      <key>halloween</key>
+      <dict>
+        <key>CFBundleIconFiles</key><array><string>halloween</string></array>
+        <key>UIPrerenderedIcon</key><false/>
+      </dict>
+      <key>holiday</key>
+      <dict>
+        <key>CFBundleIconFiles</key><array><string>holiday</string></array>
+        <key>UIPrerenderedIcon</key><false/>
+      </dict>
+    </dict>
+  </dict>
+</dict>
+</plist>
