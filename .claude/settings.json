@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "app-agent-skills": {
+      "source": { "source": "github", "repo": "Jose-Currinir/App-Agent-Skills" }
+    }
+  },
+  "enabledPlugins": {
+    "butake-skills@app-agent-skills": true
+  }
+}
